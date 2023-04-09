@@ -1,0 +1,99 @@
+html {
+    background-color: lightcoral;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container-fluid {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: cursive;
+    background-color: #c6adf5;
+}
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 80%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    
+} 
+
+.title {
+    font-style: italic;
+}
+
+
+/* @media only screen and (min-width: 100px) {
+
+    .col {
+        background-color: lavenderblush;
+    }
+} */
+
+@media only screen and (min-width:200px) {
+    .col {
+        display: block;
+        width: 80%;
+        background-color: brown;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .col {
+        display: block;
+        width: 80%;
+        background-color: brown;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .col {
+        display: block;
+        width: 80%;
+        background-color: lightgray;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .col {
+        display: block;
+        width: 80%;
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .col {
+        display: block;
+        width: 80%;
+        background-color: lavender;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    html {
+        background-color: rgb(230, 173, 173);
+    }  
+    .container-fluid {
+        background-color: blanchedalmond;
+    }
+    .col {
+        display: block;
+        width: 80%;
+        background-color: lavender;
+    }
+}
+
