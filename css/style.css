@@ -97,3 +97,21 @@ html {
     }
 }
 
+/* in MobileResources.html */
+
+.mobileResources-container {
+    background-color: #c6adf5;
+    font-family: 'Times New Roman', Times, serif;
+    font: 100;
+}
+
+.mobileResources-container h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+.each-container {
+    display: flex;
+    justify-content: space-around;
+}

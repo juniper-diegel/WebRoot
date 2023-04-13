@@ -9,59 +9,94 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 
 </head>
 <body>
+  <div class="mobileResources-container">
 
-<h1>Web Resources</h1>
+    <h1><strong>Web Resources for Mobile Programming</strong></h1>
 
-<p class="foo">
-<a href="#a">Android Sensor Overview</a> | 
-<a href="#b">NASA API</a> | 
-<a href="#c">Mozilla</a>
-<a href="#c">HTML Validator</a>
-<a href="../index.html">Main</a>
-</p>
+    <p class="foo">
+    <a href="#a">Master Android's Sensors</a> | 
+    <a href="#b">Motion Sensors in iOS</a> | 
+    <a href="#c">How to Build an Application to Test Motion Sensors in Android</a>
+    <a href="../index.html">Main</a>
+    </p>
 
-<ol>
+    <div class="each-container">
+      <ol>
 
-<li>
-<p id="a">
-<a href="">Android Sensor Overview</a><br />
-Sensor documentation created and maintained by Google for Android developers.  Excellent information on what sensors are available and how to get to them.<br />
-Rating: 5 out of 5
+        <li>
+        <p id="a">
+        <a href="https://www.androidauthority.com/master-android-sensors-946024/"><strong>Master Android's Sensors</strong></a><br /><br/>
+        <strong>Varity of Android sensor types listed by Android Authority, which include the following:</strong><br/><br/>
+        Environmental Sensors measuring conditions such as:<br/>
+        <ul>
+          <li>Air Temperature</li>
+          <li>Pressure</li>
+          <li>Humidity</li>
+          <li>Ambient Light Levels</li>
+        </ul><br/>
+        Sensors measuring a device's physical position, like:<br/>
+        <ul>
+          <li>Proximity to Objects</li>
+          <li>Geomagnetic Field Detection</li>
+        </ul><br/>
+        Sensors mesuring a device's motion, including:<br/>
+        <ul>
+          <li>Accelerometers</li>
+          <li>Gravity Sensors</li>
+          <li>Guroscopes</li>
+          <li>Rotation Vector Sensors</li>
+        </ul><br/>
+        These sensors can either be hardware-based, where physical components are built into the device for the purpose of each sensor, or software-based, which collects data from multiple sensors from the hardware. This source also cover examples on how to communicate with each sensor and their respective listeners.<br /><br/>
+        Rating: 5 out of 5<br/><br/>
 
-</p>
-</li>
+        </p>
+        </li>
 
-<li>
-<p id="b">
-<a href="https://api.nasa.gov/">NASA APIs</a><br />
-NASA Open Apis: The objective of this site is to make NASA data, including imagery, eminently accessible to application developers. Lots of tutorials and instructions how how to use the NASA databases.<br />
-Rating: 5 out of 5
+        <li>
+        <p id="b">
+        <a href="https://navoshta.com/motion-sensor-data/"><strong>Motion Sensors in iOS</strong></a><br /><br/>
+        Motion sensors in iOS devices function rather differently than Andriod devices, but still perform a lot of the same tasks at about the same level as its counterpart. 
+        In fact, the hardware can be so percise as to create a Virtual Reality experience for some users. Most iOS devices are equipped with three sensors:<br/>
+        <ul>
+          <li><strong>Accelerometer. </strong>Measures non-gravitational acceleration along the X, Y or Z axes.</li>
+          <li><strong>Gyroscope. </strong>Measures device rotation with respect to Earth gravity.</li>
+          <li><strong>Magnetometer. </strong>Measures the strength of the magnetic field surrounding the device.</li>
+        </ul><br/>
+        All three of these sensors are handled through the <strong>CMMotionManager </strong>class. This makes programming in this environment much simpler when handling sensor projects.<br/><br/>
+        Rating: 5 out of 5<br/><br/>
 
-</p>
+        </p>
 
-</li>
+        </li>
 
-<li>
-<p id="c">
-<a href="https://developer.mozilla.org">Mozilla Developer Net Web Docs</a><br />
-Tools, tutorials and information about coding for Mozilla browsers.  Much of the information is also cross platform.<br />
-Rating: 5 out of 5
-</p>
-</li>
+        <li>
+        <p id="c">
+        <a href="https://www.geeksforgeeks.org/how-to-build-an-application-to-test-motion-sensors-in-android/#"><strong>How to Build an Application to Test Motion Sensors in Android</strong></a><br /><br/>
+        This article walks their reader through six steps on how to test their Android motion sensors. 
+        The specific components that will be tested in this case will be <strong>Accelerometer</strong> and <strong>Gyroscope</strong>. 
+        Here are the ordered steps to change the mobile device's screen color as it's moved around in different situations:<br /><br/>
+        <ol>
+          <li><strong>Create a New Project</strong> in Android Studio with Java as the programming language.</li>
+          <li><strong>Add features in the AndroidMainfest.xml file</strong> to add the requirement of the physical sensors needed for this project.</li>
+          <li><strong>Add code to the activity_main.xml file</strong> to update the output formatting.</li>
+          <li><strong>Add functions to the Accelerometer.java file</strong> to add the listeners to for the Accelerometer and methods for responses to motion engagement.</li>
+          <li><strong>Add functions to the Gyroscope.java file</strong> to add the listeners to for the Gyroscope and methods for responses to motion engagement.</li>
+          <li><strong>Add functions to the MainActivity.java file</strong> to add the actions to carry out in reponse to engagement of the Accelerometer.java and Gyroscope.java files.</li>
+        </ol><br/>
 
-<li>
-<p id="d">
-<a href="https://validator.w3.org/">W3C HTML Validator</a><br />
-If you want to write correct HTML, this is a handy resource.<br />
-This validator checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc. If you wish to validate specific content such as RSS/Atom feeds or CSS stylesheets, MobileOK content, or to find broken links, there are other validators and tools available. As an alternative you can also try our non-DTD-based validator.<br />
-Rating: 5 out of 5
-</p>
-</li>
+        Rating: 5 out of 5<br/>
+        </p>
+        </li>
 
-</ol>
+      </ol>
+      
+    </div>
+
+  </div>
 
 </body>
 </html>
